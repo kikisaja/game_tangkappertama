@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Gem Catcher Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Area Informasi Skor & Nyawa -->
+        <div class="scoreboard">
+            <div class="score-box">Skor: <span id="score">0</span></div>
+            <div class="heart-box">Nyawa: <span id="lives">💖💖💖</span></div>
+        </div>
+
+        <!-- Area Utama Game -->
+        <div class="game-board" id="gameBoard">
+            <!-- Keranjang Penangkap -->
+            <div class="basket" id="basket"></div>
+        </div>
+
+        <!-- Layar Game Over (Tersembunyi di Awal) -->
+        <div class="game-over-screen" id="gameOverScreen">
+            <h1>GAME OVER</h1>
+            <p>Skor Akhir Kamu: <span id="finalScore">0</span></p>
+            <button id="btnRestart">Main Lagi 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
